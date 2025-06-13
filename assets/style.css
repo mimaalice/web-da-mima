@@ -25,6 +25,8 @@ background: linear-gradient(to left, rgb(248, 192, 255), #713c86);
     height: 100%;
     /*background-color: #8f0260; */
     text-align:center
+    transform-style: preserve-3d;
+    transition:transform 300ms ease-in-out;
 }
 
 .cartão__conteúdo h3 {
@@ -46,6 +48,10 @@ background: linear-gradient(to left, rgb(248, 192, 255), #713c86);
 .cartão__conteúdo__resposta {
     color: var(--card-back-color);
     font-weight: 700;
+}
+
+.cartão:hover .cartão__conteúdo{
+    transform:rotate(180deg);
 }
 
 footer {
