@@ -1,7 +1,12 @@
+:root {
+    --text-color: #d6d6d6;
+    --card-front-color: #780052;
+    --card-back-color: #75cacb;
+}
+
 body {
-    background-color: #e832c7;
-    color:rgb(239, 219, 255) 
-    
+background: linear-gradient(to left, rgb(248, 192, 255), #713c86);
+    color:rgb(0, 0, 0);
 }
 
 #container {
@@ -10,20 +15,21 @@ body {
 
 .cartão{
     margin: 1rem 1rem;
-    background-color: #b8007b;
     height: 20rem;
     flex-grow: ;
     flex-basis: calc(33% - 6rem);
 }
 
 .cartão__conteúdo {
+    background-color: var(--card-front-color);
     height: 100%;
     /*background-color: #8f0260; */
     text-align:center
 }
 
 .cartão__conteúdo h3 {
-    background-color: #00b2b8;
+    color: var(--text-color);
+    border: 1px solid var(--text-color)
     text-align: left;
     padding: 0.6rem;
     position: absolute;
