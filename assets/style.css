@@ -26,7 +26,7 @@ background: linear-gradient(to left, rgb(248, 192, 255), #713c86);
     /*background-color: #8f0260; */
     text-align:center
     transform-style: preserve-3d;
-    transition:transform 300ms ease-in-out;
+    transition: transform 300ms ease-in-out;
 }
 
 .cartão__conteúdo h3 {
@@ -38,6 +38,7 @@ background: linear-gradient(to left, rgb(248, 192, 255), #713c86);
     margin: 0.6rem;
     border-radius: 0.6rem;
     font-size: 1vw;
+    backface-visibility: hidden;
 }
 
 .cartão__conteúdo__pergunta {
@@ -51,7 +52,12 @@ background: linear-gradient(to left, rgb(248, 192, 255), #713c86);
 }
 
 .cartão:hover .cartão__conteúdo{
-    transform:rotate(180deg);
+    transform: rotateY(180deg);
+}
+
+.cartão__conteúdo__pergunta,
+.cartão__conteúdo__resposta {
+    backface-visibility: hidden;
 }
 
 footer {
